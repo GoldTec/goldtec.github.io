@@ -13,6 +13,17 @@
   <body>
     <iframe src="https://titanembeds.com/embed/329649811332792320" height="600" width="800" frameborder="0"></iframe>
     
+    <audio id="trap" style="visibility: hidden;" autoplay="" loop="">
+    <source src="../assets/audio/trap.mp3" type="audio/mpeg">
+  </audio>
+    <script>
+    var audio = document.getElementById("trap");
+    audio.volume = 0.2;
+  </script>
+    <div id="zenegomb">
+ <button class="btn" onclick="document.getElementById('trap').pause()">Mute</button>
+ <button class="btn" onclick="document.getElementById('trap').play()">Play</button>
+    </div>
   </body>
   
   
